@@ -1,0 +1,22 @@
+D:\GameCaro\GameCaro\bin\Debug\GameCaro.exe.config
+D:\GameCaro\GameCaro\bin\Debug\GameCaro.exe
+D:\GameCaro\GameCaro\bin\Debug\GameCaro.pdb
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.AssemblyReference.cache
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.SuggestedBindingRedirects.cache
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.Form1.resources
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.Properties.Resources.resources
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.GenerateResource.cache
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.CoreCompileInputs.cache
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.exe
+D:\GameCaro\GameCaro\obj\Debug\GameCaro.pdb
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\bin\Debug\GameCaro.exe.config
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\bin\Debug\GameCaro.exe
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\bin\Debug\GameCaro.pdb
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.AssemblyReference.cache
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.SuggestedBindingRedirects.cache
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.Form1.resources
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.Properties.Resources.resources
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.GenerateResource.cache
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.csproj.CoreCompileInputs.cache
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.exe
+C:\Users\HL080221\Dropbox\DLU\COURSES\Object Oriented Programming\GameCaro\GameCaro\obj\Debug\GameCaro.pdb
