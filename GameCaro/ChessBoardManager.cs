@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Security.AccessControl;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -166,8 +167,10 @@ namespace GameCaro
             Point point = GetChessPoint(btn);
 
             int countLeft = 0;
-            for (int i = point.X; i >= 0; i--)
+            for (int i = point.X; i >= point.X-5; i--)
             {
+                if (i < 0)
+                    break;
                 if (Matrix[point.Y][i].BackgroundImage == btn.BackgroundImage)
                 {
                     countLeft++;
@@ -177,9 +180,10 @@ namespace GameCaro
             }
             
             int countRight = 0;
-
-            for (int i = point.X+1; i < Cons.CHESS_BOARD_WIDTH; i++)
+            for (int i = point.X+1; i < point.X + 1+ 5; i++)
             {
+                if (i > Cons.CHESS_BOARD_WIDTH-1)
+                    break;
                 if (Matrix[point.Y][i].BackgroundImage == btn.BackgroundImage)
                 {
                     countRight++;
@@ -195,8 +199,10 @@ namespace GameCaro
             Point point = GetChessPoint(btn);
 
             int countTop = 0;
-            for (int i = point.Y; i >= 0; i--)
+            for (int i = point.Y; i >= point.Y - 5; i--)
             {
+                if (i < 0)
+                    break;
                 if (Matrix[i][point.X].BackgroundImage == btn.BackgroundImage)
                 {
                     countTop++;
@@ -206,9 +212,10 @@ namespace GameCaro
             }
 
             int countBottom = 0;
-
-            for (int i = point.Y + 1; i < Cons.CHESS_BOARD_HEIGHT; i++)
+            for (int i = point.Y + 1; i < point.Y + 1 + 5; i++)
             {
+                if (i > Cons.CHESS_BOARD_HEIGHT-1)
+                    break;
                 if (Matrix[i][point.X].BackgroundImage == btn.BackgroundImage)
                 {
                     countBottom++;
@@ -224,7 +231,7 @@ namespace GameCaro
             Point point = GetChessPoint(btn);
 
             int countTop = 0;
-            for (int i = 0; i <= point.X; i++)
+            for (int i = 0; i <= 5; i++)
             {
                 if (point.X - i < 0 || point.Y - i < 0)
                     break;
@@ -238,7 +245,7 @@ namespace GameCaro
 
             int countBottom = 0;
 
-            for (int i = 1; i <= Cons.CHESS_BOARD_WIDTH - point.X; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 if (point.X + i >= Cons.CHESS_BOARD_WIDTH || point.Y + i >= Cons.CHESS_BOARD_HEIGHT)
                     break;
@@ -257,7 +264,7 @@ namespace GameCaro
             Point point = GetChessPoint(btn);
 
             int countTop = 0;
-            for (int i = 0; i <= point.Y; i++)
+            for (int i = 0; i <= 5; i++)
             {
                 if (point.Y - i < 0 || point.X + i >= Cons.CHESS_BOARD_WIDTH)
                     break;
@@ -271,7 +278,7 @@ namespace GameCaro
 
             int countBottom = 0;
 
-            for (int i = 1; i <= Cons.CHESS_BOARD_WIDTH - point.X; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 if (point.Y + i >= Cons.CHESS_BOARD_HEIGHT|| point.X - i < 0)
                     break;
@@ -301,6 +308,15 @@ namespace GameCaro
 
             PlayerAvatar.Image = Player[CurrentPlayer].Avatar;
         }
+
+        private int min(int a, int b)
+        {
+            int result = a;
+            if (b < result)
+                result = b;
+            return result;
+        }
+
         #endregion
     }
 }
